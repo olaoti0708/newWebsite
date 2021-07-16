@@ -1,0 +1,44 @@
+﻿@{ ViewData["Title"] = "Customer Page"; }
+
+<div class="text-center">
+    <h1 class="display-4">About Me</h1>
+    <p></p>
+    <h5>First Name: IDRIS</h5>
+    <p></p>
+    <h5>Last Name: AMBALI</h5>
+</div>
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Customer Information Table</h4>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table data-url="@Url.Action("GetCustomer")"
+                               class="table table-hover table-striped">
+
+                            <thead>
+                                <tr>
+                                    <th data-field="firstName">First Name</th>
+                                    <th data-field="lastName">Last Name</th>
+                                    <th data-field="dateOfBirth">Date of Birth</th>
+                                    <th data-field="address">Address</th>
+                                    <th data-field="sex">Sex</th>
+                                </tr>
+                            </thead>
+                            
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
